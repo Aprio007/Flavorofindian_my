@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Flavorofindian</title>
+
+    <style>
+        .headd {
+            background-color: black;
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            overflow-x: hidden;
+        }
+        .loggo {
+            background-color: #DD8907;
+            height: 46px;
+            width: 67px;
+            margin-top: 2vh;
+
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+        li {
+            display: list-item;
+            list-style: none;
+            margin-top: 2%;
+        }
+        a:hover {
+            color: #DD8907;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 4vw;
+            margin-bottom: 0;
+        }
+        .order {
+            width: 148px;
+            height: 52px;
+            background-color: #DD8907;
+            margin-top: 9%;
+            margin-bottom: 9%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: #fff;
+            border-radius: 4px;
+        }
+        a {
+            color: #dfdfdf;
+            text-decoration: none;
+
+        }
+        .Home {
+            color: #DD8907;
+        }
+        .Home:hover {
+            background-color: #DD8907;
+            color: #fff;
+        }
+        .order:hover {
+            background-color: #fff;
+        }
+        h1 {
+            font-family: Gilroy;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 56px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+
+        }
+        .main {
+            background: url(./items/Rectangle\ 4.png);
+            height: 92vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .main_p {
+            font-family: Gilroy;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 47px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+        }
+        .main_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main_btn {
+            display: flex;
+            gap: 10px;
+            margin-top: 50px;
+        }
+        .one {
+            background-color: #DD8907;
+            height: 60px;
+            width: 167px;
+        }
+        .one:hover {
+            background-color: white;
+        }
+        .two {
+            border-color: #DD8907;
+            width: 193px;
+        }
+        .main_text>h1 {
+            font-family: sans-serif;
+        }
+        .main_text>p {
+            font-family: sans-serif;
+        }
+        .location_text {
+            text-align: center;
+            color: #333333;
+            font-family: sans-serif;
+            font-size: 48px;
+            margin-top: 7.4vh;
+            margin-bottom: 62px;
+        }
+        * {
+            overflow-x: hidden;
+        }
+        .location_photo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* height: 630px;
+            width: 100vw; */
+            gap: 23px;
+            margin-bottom: 101px;
+        }
+        .cityes {
+            border: #DD8907 solid;
+            border-width: 5px;
+            padding: 5px;
+            border-radius: 2px;
+        }
+        .more {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: #333333;
+            color: #dfdfdf;
+            font-family: sans-serif;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 56px;
+            letter-spacing: 0em;
+            text-align: left;
+            height: 200px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .adress_burbank {
+            display: flex;
+            flex-wrap: wrap;
+            /* height: 740px; */
+            justify-content: space-around;
+            align-items: center;
+        }
+        .adress_item {
+            display: flex;
+            flex-direction: column;
+            gap: 29px;
+        }
+        .adress_list {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            
+        }
+        .menu_photo {
+            display: flex;
+            justify-content: center;
+            gap: 38px;
+            flex-wrap: wrap;
+        }
+        .see_more {
+            width: 271px;
+            height: 87px;
+            background-color: #DD8907;
+            color: #fff;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            font-family: sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 38px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+        .footerr {
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            overflow-x: hidden;
+            align-items: center;
+            /* gap: 90px; */
+        }
+        .Flavorofindian {
+            font-family: sans-serif;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 47px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #fff;
+
+        }
+        .box_ {
+            background-color: #121418;
+            width: 100vw;
+            height: 371px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+        .copyright {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section class="headers"> 
+        <div class="headd">
+            <div class="logo">
+                <div class="loggo">LOGO</div>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a class="Home" href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="ordernow">
+                <div class="order"><a href="#">Order now</a></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="main">
+    <div id="main">
+        <div class="main_text">
+            <h1>Flavorofindian</h1>
+            <p class="main_p">network of the largest restaurants in India!</p>
+            <div class="main_btn">
+                <button type="button" class="btn one"><a href="#">Order now</a></button>
+                <button type="button" class="btn two"><a href="#">Book an order</a></button>
+            </div>
+
+    </section>
+    <section class="location">
+        <div class="local_text">
+          <p class="location_text">Our Location</p>
+        </div>
+        <div class="location_photo">
+            <div class="Burbank cityes"><img src="./items/Burbank.png" alt=""></div>
+            <div class="Hollywood cityes"><img src="./items/Hollywood.png" alt=""></div>
+            <div class="Studio cityes"><img src="./items/StudioCity.png" alt=""></div>
+        </div>
+        <div class="more">More about locations</div>
+
+    </section>
+    <section class="adress">
+        <div class="adress_burbank" style="margin-bottom: 100px;">
+            <div class="adress_item">
+                <h3>Burbank</h3>
+                <div class="adress_list">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
+                        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        Burbank Restaurant 
+                    </div>
+                </div>
+                <div class="adress_list">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      161 E. Orange Grove Ave. Burbank, CA 91502
+                    </div>
+                </div>
+                <div class="adress_list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                      818-558-1199, 818-558-1115
+                </div>
+                <div class="adress_list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar2-fill" viewBox="0 0 16 16">
+                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM2.545 3h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1c0-.276.244-.5.545-.5z"/>
+                      </svg>
+                      Monday - Sunday 1:00pm – 10:00pm
+                </div>
+                <a style="margin-top: 10px; color: #DD8907;" href="#">read more</a>
+            </div>
+            <div><img src="./items/adress/one.png" alt=""></div>
+        </div>
+        <div class="adress_burbank" style="margin-bottom: 100px;">
+            <div><img src="./items/adress/two.png" alt=""></div>
+            <div class="adress_item">
+                <h3>West Hollywood</h3>
+                <div class="adress_list">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
+                        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        West Hollywood Restaurant
+ 
+                    </div>
+                </div>
+                <div class="adress_list">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>
+                    </div>
+                    <div>
+                    7950 Sunset Blvd #105, West Hollywood, CA 90046
+                    </div>
+                </div>
+                <div class="adress_list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                      (323) 745-5181
+                </div>
+                <div class="adress_list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar2-fill" viewBox="0 0 16 16">
+                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM2.545 3h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1c0-.276.244-.5.545-.5z"/>
+                      </svg>
+                      Monday -Sunday 3:00pm – 10:00pm
+                </div>
+                <a style="margin-top: 10px; color: #DD8907;" href="#">read more</a>
+            </div>
+            
+        </div>
+        <div class="adress_burbank" style="margin-bottom: 100px;">
+            <div class="adress_item">
+                <h3>Studio City</h3>
+                <div class="adress_list">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
+                        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        Studio City Restaurant 
+                    </div>
+                </div>
+                <div class="adress_list">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>
+                    </div>
+                    <div>
+                        12321 Ventura Blvd Studio City, CA 91604
+                    </div>
+                </div>
+                <div class="adress_list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                      (818) 761-8140, (818) 761-8146
+                </div>
+                <div class="adress_list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar2-fill" viewBox="0 0 16 16">
+                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM2.545 3h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1c0-.276.244-.5.545-.5z"/>
+                      </svg>
+                      Monday -Sunday 3:00pm – 10:00pm
+                </div>
+                <a style="margin-top: 10px; color: #DD8907;" href="#">read more</a>
+            </div>
+            <div><img src="./items/adress/three.png" alt=""></div>
+        </div>
+        <div class="more" style="margin-bottom: 80px;">Menu</div>
+    </section>
+    <section class="menu">
+        <div class="menu_photo">
+            <img src="./menu/egg.png" alt="">
+            <img src="./menu/fish.png" alt="">
+            <img src="./menu/sup.png" alt="">
+        </div>
+        <div style="display: flex; justify-content: center; margin-bottom: 96px;">
+            <div class="see_more"><a href="#">See menu</a></div>
+        </div>
+
+    </section>
+    <section class="footer"> 
+        <div class="box_">
+        <div class="footerr">
+            <div class="Flavorofindian">
+                Flavorofindian
+
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a class="Home" href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="ordernow">
+                <div class="order" style="width: 283px; height: 69px; font-size: 24px;"><a href="#">Order now</a></div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <div style="color: #878787;
+            ; font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            ">© Copyright Flavor of India All Right Reserved.  </div>
+            <div style="color: #ffffff50; font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            ">All Right Reserved. Copyright 2018</div>
+            <div style="color: #ffffff50; font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            ">Los Angeles Digital Marketing Agency</div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
